@@ -3,17 +3,28 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Muhammad Irsyad - Full Stack Developer</title>
+
+    <!-- Meta untuk SEO -->
+    <meta name="description" content="Full-Stack Developer skilled in .NET, React, Next.js. Portfolio of Muhammad Irsyad." />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- Icons & CSS -->
     <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header class="header">
-      <a href="#" class="logo">Muhammad Irsyad</a>
+    <header class="header" role="banner">
+      <a href="#home" class="logo">Muhammad Irsyad</a>
 
-      <nav class="navbar">
+      <!-- Mobile toggle button (lebih mulus & accessible) -->
+      <button id="menu-toggle" class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false" aria-controls="site-nav">
+        <i class="bx bx-menu"></i>
+      </button>
+
+      <nav id="site-nav" class="navbar" role="navigation">
         <a href="#home" style="--i: 1" class="active">Home</a>
         <a href="#about" style="--i: 2">About</a>
         <a href="#skills" style="--i: 3">Skills</a>
@@ -29,19 +40,19 @@
         <h1>Muhammad Irsyad</h1>
         <h3>And I'm a <span class="multiple-text"></span></h3>
         <p>
-          Full-Stack Developer with 2 years of experience in designing and building scalable web applications using .NET Core, MVC, C#, and clean architecture. Skilled in front-end development with React.js, Next.js, and TypeScript.
+          Full-Stack Developer experienced in building scalable web applications using .NET Core, ASP.NET MVC, C#, and Clean Architecture, and shipping modern frontends with React.js, Next.js, and TypeScript. Currently contributing remotely to a Malaysia-based software company and developing enterprise systems at PT Kalventis Sinergi Farma.
         </p>
-        <div class="social-media">
-          <a href="https://web.facebook.com/muhammadirsyad.ryuzaki" style="--i: 7"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/muhammad_irsyad37/" style="--i: 8"><i class="bx bxl-instagram-alt"></i></a>
-          <a href="https://www.linkedin.com/in/muhammad-irsyad-204821173/" style="--i: 9"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/muhammadirsyad95" style="--i: 10"><i class="bx bxl-github"></i></a>
+        <div class="social-media" aria-label="Social links">
+          <a href="https://web.facebook.com/muhammadirsyad.ryuzaki" style="--i: 7" target="_blank" rel="noopener"><i class="bx bxl-facebook" aria-hidden="true"></i><span class="visually-hidden">Facebook</span></a>
+          <a href="https://www.instagram.com/muhammad_irsyad37/" style="--i: 8" target="_blank" rel="noopener"><i class="bx bxl-instagram-alt" aria-hidden="true"></i><span class="visually-hidden">Instagram</span></a>
+          <a href="https://www.linkedin.com/in/muhammad-irsyad-204821173/" style="--i: 9" target="_blank" rel="noopener"><i class="bx bxl-linkedin" aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
+          <a href="https://github.com/muhammadirsyad95" style="--i: 10" target="_blank" rel="noopener"><i class="bx bxl-github" aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </div>
-        <a href="images/CV Muhammad Irsyad Full Stack Developer 2025.pdf" class="btn">Download CV</a>
+        <a href="images/CV Muhammad Irsyad Full Stack Developer 2025.pdf" class="btn" target="_blank" rel="noopener">Download CV</a>
       </div>
 
       <div class="home-img">
-        <img src="images/Oke.png" alt="Muhammad Irsyad" />
+        <img src="images/Oke.png" alt="Portrait of Muhammad Irsyad" width="450" height="450" loading="eager" />
       </div>
     </section>
 
@@ -51,14 +62,11 @@
         <div class="about-grid">
           <div class="about-text">
             <p>
-              I'm a passionate Full-Stack Developer with a strong background in both front-end and back-end technologies. 
-              My journey in tech began with a career transition from banking, where I discovered my passion for solving 
-              problems through code.
+              I'm a passionate Full-Stack Developer with a strong background in both front-end and back-end technologies.
+              Transitioned from banking, I bring a business-first mindset and love solving problems through code.
             </p>
             <p>
-              I specialize in building robust web applications using .NET Core and modern JavaScript frameworks. 
-              My banking experience gives me unique insights into business processes that I leverage to create 
-              technology solutions that drive real business value.
+              I specialize in building robust web applications using .NET and modern JavaScript frameworks, translating business needs into reliable, scalable solutions.
             </p>
             <div class="personal-info">
               <div class="info-item">
@@ -89,83 +97,37 @@
     <section id="skills" class="skills">
       <div class="skills-content">
         <h2 class="section-title">Technical Skills</h2>
-        
         <div class="skills-grid">
           <div class="skill-category">
             <h3>Backend</h3>
             <div class="skills-list">
-              <div class="skill-item">
-                <i class='bx bxl-c-plus-plus'></i>
-                <span>.NET Core</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bx-code'></i>
-                <span>C#</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bx-data'></i>
-                <span>ASP.NET MVC</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bx-server'></i>
-                <span>SQL Server</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bx-architecture'></i>
-                <span>Clean Architecture</span>
-              </div>
+              <div class="skill-item"><i class='bx bx-code-alt'></i><span>.NET Core</span></div>
+              <div class="skill-item"><i class='bx bx-code'></i><span>C#</span></div>
+              <div class="skill-item"><i class='bx bx-layer'></i><span>ASP.NET MVC</span></div>
+              <div class="skill-item"><i class='bx bx-server'></i><span>SQL Server</span></div>
+              <div class="skill-item"><i class='bx bx-architecture'></i><span>Clean Architecture</span></div>
             </div>
           </div>
-          
+
           <div class="skill-category">
             <h3>Frontend</h3>
             <div class="skills-list">
-              <div class="skill-item">
-                <i class='bx bxl-javascript'></i>
-                <span>JavaScript</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bxl-react'></i>
-                <span>React.js</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bxl-typescript'></i>
-                <span>Next.js</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bxl-typescript'></i>
-                <span>TypeScript</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bxl-bootstrap'></i>
-                <span>Bootstrap</span>
-              </div>
+              <div class="skill-item"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+              <div class="skill-item"><i class='bx bxl-react'></i><span>React.js</span></div>
+              <div class="skill-item"><i class='bx bxl-nextjs'></i><span>Next.js</span></div>
+              <div class="skill-item"><i class='bx bxl-typescript'></i><span>TypeScript</span></div>
+              <div class="skill-item"><i class='bx bxl-bootstrap'></i><span>Bootstrap</span></div>
             </div>
           </div>
-          
+
           <div class="skill-category">
             <h3>Tools & Others</h3>
             <div class="skills-list">
-              <div class="skill-item">
-                <i class='bx bxl-github'></i>
-                <span>GitHub</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bxl-html5'></i>
-                <span>HTML5</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bxl-css3'></i>
-                <span>CSS3</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bxl-jquery'></i>
-                <span>jQuery</span>
-              </div>
-              <div class="skill-item">
-                <i class='bx bx-data'></i>
-                <span>Supabase PostgreSQL</span>
-              </div>
+              <div class="skill-item"><i class='bx bxl-github'></i><span>GitHub</span></div>
+              <div class="skill-item"><i class='bx bxl-html5'></i><span>HTML5</span></div>
+              <div class="skill-item"><i class='bx bxl-css3'></i><span>CSS3</span></div>
+              <div class="skill-item"><i class='bx bxl-jquery'></i><span>jQuery</span></div>
+              <div class="skill-item"><i class='bx bx-data'></i><span>Supabase / PostgreSQL</span></div>
             </div>
           </div>
         </div>
@@ -175,175 +137,179 @@
     <section id="experience" class="experience">
       <div class="experience-content">
         <h2 class="section-title">Work Experience</h2>
-        
+
         <div class="timeline">
+          <!-- Data Prime (baru ditambah) -->
           <div class="timeline-item">
-            <div class="timeline-date">Aug 2024 – Present</div>
+            <div class="timeline-date">Sep 2025 – Present</div>
             <div class="timeline-content">
-              <h3>Full Stack Engineer</h3>
-              <h4>PT Kalventis Sinergi Farma</h4>
+              <h3>Software Engineer (Remote, Part-time)</h3>
+              <h4>Data Prime Sdn. Bhd. — Kuala Lumpur, Malaysia</h4>
               <ul>
-                <li>Developed and maintained internal .NET Core and ReactJS applications</li>
-                <li>Designed databases, conducted performance tuning, and implemented features</li>
-                <li>Conducted business analysis to align IT features with company goals</li>
+                <li>Develop and enhance full-stack web apps using .NET (C#, Razor, Blazor), React, SQL Server, and PostgreSQL with Clean Architecture.</li>
+                <li>Collaborate with distributed teams via agile sprints and code reviews to deliver high-quality, scalable solutions.</li>
               </ul>
             </div>
           </div>
-          
+
+          <div class="timeline-item">
+            <div class="timeline-date">Aug 2024 – Present</div>
+            <div class="timeline-content">
+              <h3>IT Full Stack Engineer</h3>
+              <h4>PT Kalventis Sinergi Farma</h4>
+              <ul>
+                <li>Developed and maintained internal .NET Core and ReactJS applications.</li>
+                <li>Designed databases, performed performance tuning, and implemented features.</li>
+                <li>Conducted business analysis to align IT features with company goals.</li>
+              </ul>
+            </div>
+          </div>
+
           <div class="timeline-item">
             <div class="timeline-date">Jan 2024 – Aug 2024</div>
             <div class="timeline-content">
               <h3>Application Support Engineer</h3>
               <h4>PT NawaData Solution</h4>
               <ul>
-                <li>Handled SQL debugging and root cause analysis</li>
-                <li>Supported users and improved application stability</li>
+                <li>Handled SQL debugging and root cause analysis.</li>
+                <li>Supported users and improved application stability.</li>
               </ul>
             </div>
           </div>
-          
+
           <div class="timeline-item">
             <div class="timeline-date">Feb 2019 – Nov 2023</div>
             <div class="timeline-content">
               <h3>Consumer Business Staff</h3>
               <h4>PT Bank Syariah Indonesia</h4>
               <ul>
-                <li>Managed end-to-end loan applications</li>
-                <li>Ensured quality financing services</li>
+                <li>Managed end-to-end loan applications.</li>
+                <li>Maintained portfolio quality and service standards.</li>
               </ul>
             </div>
           </div>
-        </div>
+        </div><!-- /timeline -->
       </div>
     </section>
 
     <section id="projects" class="projects">
       <div class="projects-content">
         <h2 class="section-title">Featured Projects</h2>
-        
+
         <div class="projects-grid">
           <div class="project-card">
             <div class="project-image">
-              <img src="images/Zone2.png" alt="Zoom Connect">
+              <img src="images/Zone2.png" alt="Zoom Connect admin panel screenshot" loading="lazy">
             </div>
             <div class="project-info">
               <h3>Zoom Connect</h3>
               <p>.NET MVC application integrating Zoom API to optimize license usage, reducing costs and improving operational efficiency.</p>
               <div class="project-tech">
-                <span>.NET Core</span>
-                <span>MVC</span>
-                <span>Zoom API</span>
+                <span>.NET Core</span><span>MVC</span><span>Zoom API</span>
               </div>
             </div>
           </div>
-          
+
           <div class="project-card">
             <div class="project-image">
-              <img src="images/SDWH2.png" alt="Sales Data Warehouse">
+              <img src="images/SDWH2.png" alt="Sales Data Warehouse dashboard" loading="lazy">
             </div>
             <div class="project-info">
               <h3>Sales Data Warehouse</h3>
-              <p>Developed a sales data app using .NET MVC & SQL Server, managing all aspects of sales data, including regional target setting.</p>
+              <p>Developed a sales data app using .NET MVC & SQL Server, including regional target setting and data correction workflows.</p>
               <div class="project-tech">
-                <span>.NET MVC</span>
-                <span>SQL Server</span>
-                <span>Data Visualization</span>
+                <span>.NET MVC</span><span>SQL Server</span><span>Data Visualization</span>
               </div>
             </div>
           </div>
-          
+
           <div class="project-card">
             <div class="project-image">
-              <img src="images/OPB2.png" alt="OnePoint Booking">
+              <img src="images/OPB2.png" alt="OnePoint Booking room schedule view" loading="lazy">
             </div>
             <div class="project-info">
               <h3>OnePoint Booking</h3>
-              <p>Developed an ASP.NET Core room booking system with user access control, following clean architecture principles.</p>
+              <p>ASP.NET Core room booking system with role-based access, scheduling, and clean architecture.</p>
               <div class="project-tech">
-                <span>ASP.NET Core</span>
-                <span>Clean Architecture</span>
-                <span>Authentication</span>
+                <span>ASP.NET Core</span><span>Clean Architecture</span><span>Authentication</span>
               </div>
             </div>
           </div>
-          
+
           <div class="project-card">
             <div class="project-image">
-              <img src="images/travel.png" alt="Travel Landing Page">
+              <img src="images/travel.png" alt="Travel landing page" loading="lazy">
             </div>
             <div class="project-info">
               <h3>Travel Landing Page</h3>
               <p>SEO-optimized travel site using Next.js, TypeScript, Tailwind CSS with responsive design and performance optimization.</p>
               <div class="project-tech">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Tailwind CSS</span>
+                <span>Next.js</span><span>TypeScript</span><span>Tailwind CSS</span>
               </div>
+              <a href="https://travel-website2-u9lu.vercel.app/" target="_blank" rel="noopener" class="btn mt-2 d-inline-block">View Project</a>
             </div>
           </div>
-          
+
           <div class="project-card">
             <div class="project-image">
-              <img src="images/sport.png" alt="Sport Live Scoring">
+              <img src="images/sport.png" alt="Kalventis Sport Festival live scoring" loading="lazy">
             </div>
             <div class="project-info">
               <h3>Sport Live Scoring</h3>
-              <p>Real-time sports live scoring web app with dynamic updates, built with Next.js and Supabase, deployed on Vercel for high performance and scalability.</p>
+              <p>Real-time live scoring web app built with Next.js and Supabase; deployed on Vercel for high performance & scale.</p>
               <div class="project-tech">
-                <span>Next.js</span>
-                <span>TypeScript</span>
-                <span>Supabase (PostgreSQL)</span>
-                <span>Vercel</span>
+                <span>Next.js</span><span>TypeScript</span><span>Supabase (PostgreSQL)</span><span>Vercel</span>
               </div>
+              <a href="https://kalventis-sport-festival.vercel.app/" target="_blank" rel="noopener" class="btn mt-2 d-inline-block">View Project</a>
             </div>
           </div>
-        </div>
+        </div><!-- /projects-grid -->
       </div>
     </section>
 
     <section id="contact" class="contact">
       <div class="contact-content">
         <h2 class="section-title">Get In Touch</h2>
-        
+
         <div class="contact-grid">
           <div class="contact-info">
             <div class="contact-item">
-              <i class='bx bx-envelope'></i>
+              <i class='bx bx-envelope' aria-hidden="true"></i>
               <div>
                 <h3>Email</h3>
                 <p>irsyadmuhammad339@gmail.com</p>
               </div>
             </div>
-            
+
             <div class="contact-item">
-              <i class='bx bx-phone'></i>
+              <i class='bx bx-phone' aria-hidden="true"></i>
               <div>
                 <h3>Phone</h3>
                 <p>+62-822-1434-5143</p>
               </div>
             </div>
-            
+
             <div class="contact-item">
-              <i class='bx bx-map'></i>
+              <i class='bx bx-map' aria-hidden="true"></i>
               <div>
                 <h3>Location</h3>
                 <p>Bekasi City, West Java, Indonesia</p>
               </div>
             </div>
           </div>
-          
-          <form class="contact-form">
+
+          <form class="contact-form" novalidate>
             <div class="form-group">
-              <input type="text" placeholder="Your Name" required>
+              <input name="name" type="text" placeholder="Your Name" required aria-label="Your Name">
             </div>
             <div class="form-group">
-              <input type="email" placeholder="Your Email" required>
+              <input name="email" type="email" placeholder="Your Email" required aria-label="Your Email">
             </div>
             <div class="form-group">
-              <input type="text" placeholder="Subject">
+              <input name="subject" type="text" placeholder="Subject" aria-label="Subject">
             </div>
             <div class="form-group">
-              <textarea placeholder="Your Message" required></textarea>
+              <textarea name="message" placeholder="Your Message" required aria-label="Your Message"></textarea>
             </div>
             <button type="submit" class="btn">Send Message</button>
           </form>
@@ -354,15 +320,16 @@
     <footer class="footer">
       <div class="footer-content">
         <p>© 2025 Muhammad Irsyad. All rights reserved.</p>
-        <div class="footer-social">
-          <a href="https://www.linkedin.com/in/muhammad-irsyad-204821173/"><i class='bx bxl-linkedin'></i></a>
-          <a href="https://github.com/muhammadirsyad95"><i class='bx bxl-github'></i></a>
+        <div class="footer-social" aria-label="Footer social links">
+          <a href="https://www.linkedin.com/in/muhammad-irsyad-204821173/" target="_blank" rel="noopener"><i class='bx bxl-linkedin' aria-hidden="true"></i><span class="visually-hidden">LinkedIn</span></a>
+          <a href="https://github.com/muhammadirsyad95" target="_blank" rel="noopener"><i class='bx bxl-github' aria-hidden="true"></i><span class="visually-hidden">GitHub</span></a>
         </div>
       </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
-    <script src="main.js"></script>
+    <!-- JS: pakai defer supaya load lebih smooth -->
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script defer src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script defer src="main.js"></script>
   </body>
 </html>
